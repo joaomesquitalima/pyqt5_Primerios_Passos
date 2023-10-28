@@ -1,2 +1,21 @@
 # pyqt5_Primerios_Passos
 Possui um passo a passo pra aprender a usar o Pyqt5
+<h1>Passo 1: Criar uma Janela</h1>
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
+import sys
+
+def main():
+    app = QApplication(sys.argv)
+    win = QMainWindow()
+    win.setGeometry(200,200,300,300) 
+    win.setWindowTitle("My first window!") 
+    
+    # label = QLabel(win)
+    # label.setText("my first label")
+    # label.move(50, 50)  
+
+    win.show()
+    sys.exit(app.exec_())
+
+main()  # make sure to call the function
